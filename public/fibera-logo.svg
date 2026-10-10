@@ -1,0 +1,307 @@
+<svg viewBox="0 0 800 800" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Vignette Gradients -->
+    <linearGradient id="canvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7EE5DA"/>
+      <stop offset="50%" stop-color="#4BC7D0"/>
+      <stop offset="100%" stop-color="#30ABB4"/>
+    </linearGradient>
+
+    <!-- Icon Inner Background Gradient -->
+    <linearGradient id="iconInnerBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#92F0E7"/>
+      <stop offset="35%" stop-color="#63D8DF"/>
+      <stop offset="75%" stop-color="#34B3BC"/>
+      <stop offset="100%" stop-color="#2199A3"/>
+    </linearGradient>
+
+    <!-- Fairy Wings Gradients -->
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#E2FAF9" stop-opacity="0.80"/>
+      <stop offset="75%" stop-color="#A4F1F0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#5FE0E1" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Broccoli Floret 3D Gradients -->
+    <radialGradient id="floretLightGrad" cx="35%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#95E786"/>
+      <stop offset="35%" stop-color="#66C458"/>
+      <stop offset="75%" stop-color="#3C8D32"/>
+      <stop offset="100%" stop-color="#25651F"/>
+    </radialGradient>
+
+    <radialGradient id="floretMidGrad" cx="40%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#7CD96C"/>
+      <stop offset="40%" stop-color="#4FA743"/>
+      <stop offset="80%" stop-color="#2F7527"/>
+      <stop offset="100%" stop-color="#1C5317"/>
+    </radialGradient>
+
+    <radialGradient id="floretDarkGrad" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#4FA844"/>
+      <stop offset="55%" stop-color="#2D6F24"/>
+      <stop offset="100%" stop-color="#184513"/>
+    </radialGradient>
+
+    <!-- Stem Gradient -->
+    <linearGradient id="stemCeleryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6FAD4"/>
+      <stop offset="25%" stop-color="#C8F3A2"/>
+      <stop offset="70%" stop-color="#A8E87B"/>
+      <stop offset="100%" stop-color="#81CD56"/>
+    </linearGradient>
+
+    <!-- Root Legs Gradient -->
+    <linearGradient id="rootLegGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFE5CD"/>
+      <stop offset="40%" stop-color="#D9C59B"/>
+      <stop offset="100%" stop-color="#B39B6F"/>
+    </linearGradient>
+
+    <!-- Heart Badge Gradient -->
+    <linearGradient id="heartBadgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8AEFF6"/>
+      <stop offset="45%" stop-color="#45CCD8"/>
+      <stop offset="100%" stop-color="#1E9FA9"/>
+    </linearGradient>
+
+    <!-- Banner Ribbon Gradients -->
+    <linearGradient id="bannerFrontGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#47BAC2"/>
+      <stop offset="45%" stop-color="#289DA7"/>
+      <stop offset="100%" stop-color="#18767F"/>
+    </linearGradient>
+
+    <linearGradient id="bannerRibbonFoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B7178"/>
+      <stop offset="100%" stop-color="#0F4A50"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="iconCardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#0E545A" flood-opacity="0.30"/>
+    </filter>
+
+    <filter id="fairyGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="floorShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <!-- Full Canvas Background -->
+  <rect width="800" height="800" fill="url(#canvasBg)"/>
+
+  <!-- ================= APP ICON CONTAINER (SQUIRCLE) ================= -->
+  <g filter="url(#iconCardShadow)">
+    <!-- Thick Outer White Border Frame -->
+    <rect x="130" y="110" width="540" height="580" rx="140" fill="#FFFFFF"/>
+    <!-- Inner Cyan Icon Screen -->
+    <rect x="150" y="130" width="500" height="540" rx="122" fill="url(#iconInnerBg)"/>
+  </g>
+
+  <!-- Soft Floor Shadow for Peeking Root Legs -->
+  <ellipse cx="400" cy="618" rx="65" ry="12" fill="#14676E" opacity="0.45" filter="url(#floorShadow)"/>
+
+  <!-- ================= MAGICAL FAIRY SPARKLES & STARS ================= -->
+  <g filter="url(#fairyGlow)" opacity="0.9">
+    <!-- Star Sparkles (4-pointed fairy stars) -->
+    <path d="M 230 250 Q 235 250 235 244 Q 235 250 241 250 Q 235 250 235 256 Q 235 250 230 250 Z" fill="#FFFFFF"/>
+    <path d="M 570 260 Q 576 260 576 253 Q 576 260 583 260 Q 576 260 576 267 Q 576 260 570 260 Z" fill="#FFFFFF"/>
+    <path d="M 225 390 Q 228 390 228 386 Q 228 390 232 390 Q 228 390 228 394 Q 228 390 225 390 Z" fill="#FFFFFF"/>
+    <path d="M 575 395 Q 578 395 578 391 Q 578 395 582 395 Q 578 395 578 399 Q 578 395 575 395 Z" fill="#FFFFFF"/>
+    <path d="M 310 185 Q 313 185 313 181 Q 313 185 317 185 Q 313 185 313 189 Q 313 185 310 185 Z" fill="#FFFFFF"/>
+    <path d="M 490 190 Q 493 190 493 186 Q 493 190 497 190 Q 493 190 493 194 Q 493 190 490 190 Z" fill="#FFFFFF"/>
+    <!-- Little Glowing Fairy Dust Circles -->
+    <circle cx="210" cy="320" r="3.5" fill="#FFFFFF"/>
+    <circle cx="590" cy="330" r="4" fill="#FFFFFF"/>
+    <circle cx="255" cy="460" r="2.5" fill="#FFFFFF"/>
+    <circle cx="545" cy="470" r="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= TRANSLUCENT FAIRY WINGS ================= -->
+  <g filter="url(#fairyGlow)">
+    <!-- LEFT UPPER WING -->
+    <path d="M 370 380 C 240 265, 160 250, 195 345 C 215 395, 290 415, 365 395 Z" 
+          fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <!-- Wing Vein Patterns -->
+    <path d="M 225 335 Q 295 355 365 385" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <path d="M 255 370 Q 310 380 365 390" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.65"/>
+    <path d="M 245 310 Q 310 335 365 380" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.65"/>
+
+    <!-- LEFT LOWER WING -->
+    <path d="M 365 395 C 270 425, 220 480, 255 525 C 280 555, 335 495, 370 430 Z" 
+          fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 275 490 Q 320 475 365 425" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.65"/>
+
+    <!-- RIGHT UPPER WING -->
+    <path d="M 430 380 C 560 265, 640 250, 605 345 C 585 395, 510 415, 435 395 Z" 
+          fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <!-- Wing Vein Patterns -->
+    <path d="M 575 335 Q 505 355 435 385" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <path d="M 545 370 Q 490 380 435 390" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.65"/>
+    <path d="M 555 310 Q 490 335 435 380" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.65"/>
+
+    <!-- RIGHT LOWER WING -->
+    <path d="M 435 395 C 530 425, 580 480, 545 525 C 520 555, 465 495, 430 430 Z" 
+          fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 525 490 Q 480 475 435 425" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.65"/>
+  </g>
+
+  <!-- Luminous Aura Behind Broccoli Body -->
+  <ellipse cx="400" cy="380" rx="95" ry="75" fill="#FFFFFF" opacity="0.4" filter="url(#fairyGlow)"/>
+
+  <!-- ================= ROOT LEGS (PEEKING BELOW BANNER) ================= -->
+  <g id="rootLegs">
+    <!-- Left Root Leg -->
+    <path d="M 382 560 C 378 585, 370 608, 380 618 C 386 624, 391 610, 393 585 Z" 
+          fill="url(#rootLegGrad)" stroke="#5B4422" stroke-width="2"/>
+    <!-- Right Root Leg (Curving backward) -->
+    <path d="M 406 560 C 416 590, 426 612, 418 620 C 410 626, 403 605, 398 580 Z" 
+          fill="url(#rootLegGrad)" stroke="#5B4422" stroke-width="2"/>
+    <!-- Root Center Tip -->
+    <path d="M 393 580 C 396 600, 398 610, 396 614" stroke="#8C7043" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= CELERY STEM TRUNK & SHOULDERS ================= -->
+  <path d="M 362 360 C 352 410, 344 470, 350 525 C 355 560, 378 575, 400 575 C 422 575, 445 560, 450 525 C 456 470, 448 410, 438 360 Z" 
+        fill="url(#stemCeleryGrad)" stroke="#397926" stroke-width="3.5"/>
+
+  <!-- Stem 3D Contours / Texture Fluting -->
+  <path d="M 374 380 C 368 430, 366 490, 372 535" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <path d="M 426 380 C 432 430, 434 490, 428 535" stroke="#5EA440" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- ================= BROCCOLI CROWN (3D LUSH FLORETS) ================= -->
+  <g id="broccoliCrown">
+    <!-- Back Deep Clusters for 3D Volume -->
+    <circle cx="310" cy="275" r="58" fill="url(#floretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+    <circle cx="490" cy="275" r="58" fill="url(#floretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+    <circle cx="355" cy="215" r="62" fill="url(#floretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+    <circle cx="445" cy="215" r="62" fill="url(#floretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+
+    <!-- Mid Clusters -->
+    <circle cx="275" cy="325" r="50" fill="url(#floretMidGrad)" stroke="#225B20" stroke-width="3"/>
+    <circle cx="525" cy="325" r="50" fill="url(#floretMidGrad)" stroke="#225B20" stroke-width="3"/>
+    <circle cx="330" cy="265" r="60" fill="url(#floretLightGrad)" stroke="#266423" stroke-width="3"/>
+    <circle cx="470" cy="265" r="60" fill="url(#floretLightGrad)" stroke="#266423" stroke-width="3"/>
+
+    <!-- Front & Top Center Dome Clusters -->
+    <circle cx="400" cy="200" r="70" fill="url(#floretLightGrad)" stroke="#266423" stroke-width="3.5"/>
+    <circle cx="365" cy="280" r="58" fill="url(#floretMidGrad)" stroke="#225B20" stroke-width="2.5"/>
+    <circle cx="435" cy="280" r="58" fill="url(#floretMidGrad)" stroke="#225B20" stroke-width="2.5"/>
+    <circle cx="400" cy="310" r="54" fill="url(#floretLightGrad)" stroke="#266423" stroke-width="2.5"/>
+
+    <!-- Floret Spherical Dots / Specular Dimples -->
+    <g fill="#B4F3AE" opacity="0.65">
+      <circle cx="390" cy="170" r="8"/>
+      <circle cx="418" cy="165" r="6.5"/>
+      <circle cx="340" cy="235" r="7"/>
+      <circle cx="362" cy="225" r="9"/>
+      <circle cx="445" cy="230" r="8"/>
+      <circle cx="468" cy="240" r="6"/>
+      <circle cx="300" cy="260" r="7.5"/>
+      <circle cx="500" cy="260" r="7.5"/>
+      <circle cx="265" cy="315" r="6"/>
+      <circle cx="535" cy="315" r="6"/>
+      <circle cx="380" cy="275" r="8"/>
+      <circle cx="420" cy="275" r="8"/>
+    </g>
+
+    <!-- Deep Shadow Creases between Florets -->
+    <path d="M 370 240 Q 400 260 430 240" stroke="#163F13" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M 320 280 Q 345 310 370 295" stroke="#163F13" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M 480 280 Q 455 310 430 295" stroke="#163F13" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- ================= KAWAII CHEERFUL FACE ================= -->
+  <g id="kawaiiFace">
+    <!-- Left Eye -->
+    <ellipse cx="370" cy="392" rx="10.5" ry="14.5" fill="#0E2111"/>
+    <!-- Catchlights -->
+    <ellipse cx="367" cy="387" rx="4.8" ry="6.2" fill="#FFFFFF"/>
+    <circle cx="373" cy="398" r="2.4" fill="#FFFFFF"/>
+
+    <!-- Right Eye -->
+    <ellipse cx="430" cy="392" rx="10.5" ry="14.5" fill="#0E2111"/>
+    <!-- Catchlights -->
+    <ellipse cx="427" cy="387" rx="4.8" ry="6.2" fill="#FFFFFF"/>
+    <circle cx="433" cy="398" r="2.4" fill="#FFFFFF"/>
+
+    <!-- Soft Rosy Pink Blushing Cheeks -->
+    <ellipse cx="348" cy="406" rx="13" ry="8" fill="#FFAEC9" opacity="0.7" filter="url(#fairyGlow)"/>
+    <ellipse cx="452" cy="406" rx="13" ry="8" fill="#FFAEC9" opacity="0.7" filter="url(#fairyGlow)"/>
+
+    <!-- Cheerful Open Mouth with Tongue -->
+    <g>
+      <path d="M 388 406 Q 400 424 412 406 Z" fill="#1C3819" stroke="#0E2111" stroke-width="3" stroke-linejoin="round"/>
+      <!-- Pink Tongue inside -->
+      <path d="M 393 416 Q 400 412 407 416 Q 400 423 393 416 Z" fill="#FF7898"/>
+    </g>
+  </g>
+
+  <!-- ================= GLP HEART BADGE & HUGGING ARMS ================= -->
+  <g id="glpHeartHolding">
+    <!-- Green Hugging Arms -->
+    <path d="M 352 422 C 330 435, 335 470, 362 470" stroke="#71BA54" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <path d="M 448 422 C 470 435, 465 470, 438 470" stroke="#71BA54" stroke-width="13" stroke-linecap="round" fill="none"/>
+
+    <!-- Teal Heart Badge with White Outer Rim -->
+    <g filter="url(#fairyGlow)">
+      <path d="M 400 515 C 375 490, 340 460, 355 430 C 370 405, 395 420, 400 435 C 405 420, 430 405, 445 430 C 460 460, 425 490, 400 515 Z" 
+            fill="url(#heartBadgeGrad)" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Glossy Highlight on Heart -->
+    <path d="M 364 430 C 358 442, 364 462, 384 482" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+    <!-- GLP Text in Heart -->
+    <text x="393" y="462" fill="#FFFFFF" 
+          font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" 
+          font-weight="900" font-size="22" letter-spacing="1" text-anchor="middle">
+      GLP
+    </text>
+
+    <!-- Upward-Right Arrow next to P (↗) -->
+    <g stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="416" y1="456" x2="426" y2="445"/>
+      <polyline points="418,445 426,445 426,453"/>
+    </g>
+
+    <!-- Little Green Paws/Hands holding Heart Front -->
+    <circle cx="352" cy="455" r="9.5" fill="#9CE481" stroke="#488D31" stroke-width="2.5"/>
+    <circle cx="448" cy="455" r="9.5" fill="#9CE481" stroke="#488D31" stroke-width="2.5"/>
+  </g>
+
+  <!-- ================= 3D CURVED RIBBON BANNER: "FIBERA" ================= -->
+  <g id="fiberaBanner">
+    <!-- Left Ribbon Fold & Tail -->
+    <path d="M 230 515 L 280 485 L 280 545 L 230 560 L 250 535 Z" fill="url(#bannerRibbonFoldGrad)" stroke="#0E4B50" stroke-width="2"/>
+    
+    <!-- Right Ribbon Fold & Tail -->
+    <path d="M 570 515 L 520 485 L 520 545 L 570 560 L 550 535 Z" fill="url(#bannerRibbonFoldGrad)" stroke="#0E4B50" stroke-width="2"/>
+
+    <!-- Ribbon 3D Shadow Wedges -->
+    <polygon points="278,540 278,512 258,527" fill="#0A363A"/>
+    <polygon points="522,540 522,512 542,527" fill="#0A363A"/>
+
+    <!-- Main Front Curved Banner Body -->
+    <path d="M 260 515 C 355 495, 445 495, 540 515 L 530 572 C 445 550, 355 550, 270 572 Z" 
+          fill="url(#bannerFrontGrad)" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Thin Cyan Inner Highlight Border on Banner -->
+    <path d="M 270 522 C 358 504, 442 504, 530 522" stroke="#71E3EA" stroke-width="2" fill="none" opacity="0.75"/>
+
+    <!-- Banner Bold White Bubbly Text: "FIBERA" -->
+    <text x="400" y="552" fill="#FFFFFF" 
+          font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" 
+          font-weight="900" font-size="44" 
+          letter-spacing="4" text-anchor="middle"
+          stroke="#10575E" stroke-width="2" paint-order="stroke fill">
+      FIBERA
+    </text>
+  </g>
+</svg>

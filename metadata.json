@@ -1,0 +1,6 @@
+{
+  "name": "Fibera",
+  "description": "GLP-1 kullanıcıları için akıllı doz rotasyonu, lif & protein takibi ve semptom günlüğü sunan mobil sağlık uygulaması.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

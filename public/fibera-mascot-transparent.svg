@@ -1,0 +1,223 @@
+<svg viewBox="0 0 600 600" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Fairy Wings Gradients -->
+    <linearGradient id="tWingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#E2FAF9" stop-opacity="0.80"/>
+      <stop offset="75%" stop-color="#A4F1F0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#5FE0E1" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Broccoli Floret 3D Gradients -->
+    <radialGradient id="tFloretLightGrad" cx="35%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#95E786"/>
+      <stop offset="35%" stop-color="#66C458"/>
+      <stop offset="75%" stop-color="#3C8D32"/>
+      <stop offset="100%" stop-color="#25651F"/>
+    </radialGradient>
+
+    <radialGradient id="tFloretMidGrad" cx="40%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#7CD96C"/>
+      <stop offset="40%" stop-color="#4FA743"/>
+      <stop offset="80%" stop-color="#2F7527"/>
+      <stop offset="100%" stop-color="#1C5317"/>
+    </radialGradient>
+
+    <radialGradient id="tFloretDarkGrad" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#4FA844"/>
+      <stop offset="55%" stop-color="#2D6F24"/>
+      <stop offset="100%" stop-color="#184513"/>
+    </radialGradient>
+
+    <!-- Stem Gradient -->
+    <linearGradient id="tStemCeleryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6FAD4"/>
+      <stop offset="25%" stop-color="#C8F3A2"/>
+      <stop offset="70%" stop-color="#A8E87B"/>
+      <stop offset="100%" stop-color="#81CD56"/>
+    </linearGradient>
+
+    <!-- Root Legs Gradient -->
+    <linearGradient id="tRootLegGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFE5CD"/>
+      <stop offset="40%" stop-color="#D9C59B"/>
+      <stop offset="100%" stop-color="#B39B6F"/>
+    </linearGradient>
+
+    <!-- Heart Badge Gradient -->
+    <linearGradient id="tHeartBadgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8AEFF6"/>
+      <stop offset="45%" stop-color="#45CCD8"/>
+      <stop offset="100%" stop-color="#1E9FA9"/>
+    </linearGradient>
+
+    <!-- Banner Ribbon Gradients -->
+    <linearGradient id="tBannerFrontGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#47BAC2"/>
+      <stop offset="45%" stop-color="#289DA7"/>
+      <stop offset="100%" stop-color="#18767F"/>
+    </linearGradient>
+
+    <linearGradient id="tBannerRibbonFoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B7178"/>
+      <stop offset="100%" stop-color="#0F4A50"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="tDropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E545A" flood-opacity="0.30"/>
+    </filter>
+
+    <filter id="tFairyGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Sparks & Fairy Dust -->
+  <g filter="url(#tFairyGlow)" opacity="0.9">
+    <path d="M 130 180 Q 135 180 135 174 Q 135 180 141 180 Q 135 180 135 186 Q 135 180 130 180 Z" fill="#67E8F9"/>
+    <path d="M 470 190 Q 476 190 476 183 Q 476 190 483 190 Q 476 190 476 197 Q 476 190 470 190 Z" fill="#67E8F9"/>
+    <path d="M 125 320 Q 128 320 128 316 Q 128 320 132 320 Q 128 320 128 324 Q 128 320 125 320 Z" fill="#67E8F9"/>
+    <path d="M 475 325 Q 478 325 478 321 Q 478 325 482 325 Q 478 325 478 329 Q 478 325 475 325 Z" fill="#67E8F9"/>
+    <circle cx="110" cy="250" r="3.5" fill="#34D399"/>
+    <circle cx="490" cy="260" r="4" fill="#34D399"/>
+  </g>
+
+  <!-- Fairy Wings -->
+  <g filter="url(#tFairyGlow)">
+    <!-- Upper Left -->
+    <path d="M 270 280 C 140 165, 60 150, 95 245 C 115 295, 190 315, 265 295 Z" 
+          fill="url(#tWingGrad)" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 125 235 Q 195 255 265 285" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <path d="M 155 270 Q 210 280 265 290" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0.65"/>
+
+    <!-- Lower Left -->
+    <path d="M 265 295 C 170 325, 120 380, 155 425 C 180 455, 235 395, 270 330 Z" 
+          fill="url(#tWingGrad)" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 175 390 Q 220 375 265 325" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0.65"/>
+
+    <!-- Upper Right -->
+    <path d="M 330 280 C 460 165, 540 150, 505 245 C 485 295, 410 315, 335 295 Z" 
+          fill="url(#tWingGrad)" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 475 235 Q 405 255 335 285" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <path d="M 445 270 Q 390 280 335 290" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0.65"/>
+
+    <!-- Lower Right -->
+    <path d="M 335 295 C 430 325, 480 380, 445 425 C 420 455, 365 395, 330 330 Z" 
+          fill="url(#tWingGrad)" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 425 390 Q 380 375 335 325" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0.65"/>
+  </g>
+
+  <!-- Root Legs Peeking Below -->
+  <g>
+    <path d="M 282 460 C 278 485, 270 508, 280 518 C 286 524, 291 510, 293 485 Z" 
+          fill="url(#tRootLegGrad)" stroke="#5B4422" stroke-width="2"/>
+    <path d="M 306 460 C 316 490, 326 512, 318 520 C 310 526, 303 505, 298 480 Z" 
+          fill="url(#tRootLegGrad)" stroke="#5B4422" stroke-width="2"/>
+    <path d="M 293 480 C 296 500, 298 510, 296 514" stroke="#8C7043" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Celery Stem Body -->
+  <path d="M 262 260 C 252 310, 244 370, 250 425 C 255 460, 278 475, 300 475 C 322 475, 345 460, 350 425 C 356 370, 348 310, 338 260 Z" 
+        fill="url(#tStemCeleryGrad)" stroke="#397926" stroke-width="3.5"/>
+  <path d="M 274 280 C 268 330, 266 390, 272 435" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <path d="M 326 280 C 332 330, 334 390, 328 435" stroke="#5EA440" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Broccoli Crown -->
+  <g>
+    <!-- Deep Clusters -->
+    <circle cx="210" cy="175" r="58" fill="url(#tFloretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+    <circle cx="390" cy="175" r="58" fill="url(#tFloretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+    <circle cx="255" cy="115" r="62" fill="url(#tFloretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+    <circle cx="345" cy="115" r="62" fill="url(#tFloretDarkGrad)" stroke="#1B4718" stroke-width="3"/>
+
+    <!-- Mid Clusters -->
+    <circle cx="175" cy="225" r="50" fill="url(#tFloretMidGrad)" stroke="#225B20" stroke-width="3"/>
+    <circle cx="425" cy="225" r="50" fill="url(#tFloretMidGrad)" stroke="#225B20" stroke-width="3"/>
+    <circle cx="230" cy="165" r="60" fill="url(#tFloretLightGrad)" stroke="#266423" stroke-width="3"/>
+    <circle cx="370" cy="165" r="60" fill="url(#tFloretLightGrad)" stroke="#266423" stroke-width="3"/>
+
+    <!-- Front Clusters -->
+    <circle cx="300" cy="100" r="70" fill="url(#tFloretLightGrad)" stroke="#266423" stroke-width="3.5"/>
+    <circle cx="265" cy="180" r="58" fill="url(#tFloretMidGrad)" stroke="#225B20" stroke-width="2.5"/>
+    <circle cx="335" cy="180" r="58" fill="url(#tFloretMidGrad)" stroke="#225B20" stroke-width="2.5"/>
+    <circle cx="300" cy="210" r="54" fill="url(#tFloretLightGrad)" stroke="#266423" stroke-width="2.5"/>
+
+    <!-- Specular Dimples -->
+    <g fill="#B4F3AE" opacity="0.65">
+      <circle cx="290" cy="70" r="8"/>
+      <circle cx="318" cy="65" r="6.5"/>
+      <circle cx="240" cy="135" r="7"/>
+      <circle cx="362" cy="125" r="9"/>
+      <circle cx="200" cy="160" r="7.5"/>
+      <circle cx="400" cy="160" r="7.5"/>
+      <circle cx="280" cy="175" r="8"/>
+      <circle cx="320" cy="175" r="8"/>
+    </g>
+
+    <path d="M 270 140 Q 300 160 330 140" stroke="#163F13" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Kawaii Face with Open Smile & Tongue -->
+  <g>
+    <!-- Left Eye -->
+    <ellipse cx="270" cy="292" rx="10.5" ry="14.5" fill="#0E2111"/>
+    <ellipse cx="267" cy="287" rx="4.8" ry="6.2" fill="#FFFFFF"/>
+    <circle cx="273" cy="298" r="2.4" fill="#FFFFFF"/>
+
+    <!-- Right Eye -->
+    <ellipse cx="330" cy="292" rx="10.5" ry="14.5" fill="#0E2111"/>
+    <ellipse cx="327" cy="287" rx="4.8" ry="6.2" fill="#FFFFFF"/>
+    <circle cx="333" cy="298" r="2.4" fill="#FFFFFF"/>
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="248" cy="306" rx="13" ry="8" fill="#FFAEC9" opacity="0.7"/>
+    <ellipse cx="352" cy="306" rx="13" ry="8" fill="#FFAEC9" opacity="0.7"/>
+
+    <!-- Open Smile with Tongue -->
+    <path d="M 288 306 Q 300 324 312 306 Z" fill="#1C3819" stroke="#0E2111" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M 293 316 Q 300 312 307 316 Q 300 323 293 316 Z" fill="#FF7898"/>
+  </g>
+
+  <!-- Heart Badge & Arms -->
+  <g>
+    <path d="M 252 322 C 230 335, 235 370, 262 370" stroke="#71BA54" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <path d="M 348 322 C 370 335, 365 370, 338 370" stroke="#71BA54" stroke-width="13" stroke-linecap="round" fill="none"/>
+
+    <g filter="url(#tFairyGlow)">
+      <path d="M 300 415 C 275 390, 240 360, 255 330 C 270 305, 295 320, 300 335 C 305 320, 330 305, 345 330 C 360 360, 325 390, 300 415 Z" 
+            fill="url(#tHeartBadgeGrad)" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+
+    <text x="293" y="362" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-weight="900" font-size="22" letter-spacing="1" text-anchor="middle">
+      GLP
+    </text>
+    <g stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="316" y1="356" x2="326" y2="345"/>
+      <polyline points="318,345 326,345 326,353"/>
+    </g>
+
+    <circle cx="252" cy="355" r="9.5" fill="#9CE481" stroke="#488D31" stroke-width="2.5"/>
+    <circle cx="348" cy="355" r="9.5" fill="#9CE481" stroke="#488D31" stroke-width="2.5"/>
+  </g>
+
+  <!-- Ribbon Banner FIBERA -->
+  <g filter="url(#tDropShadow)">
+    <path d="M 130 415 L 180 385 L 180 445 L 130 460 L 150 435 Z" fill="url(#tBannerRibbonFoldGrad)" stroke="#0E4B50" stroke-width="2"/>
+    <path d="M 470 415 L 420 385 L 420 445 L 470 460 L 450 435 Z" fill="url(#tBannerRibbonFoldGrad)" stroke="#0E4B50" stroke-width="2"/>
+    <polygon points="178,440 178,412 158,427" fill="#0A363A"/>
+    <polygon points="422,440 422,412 442,427" fill="#0A363A"/>
+
+    <path d="M 160 415 C 255 395, 345 395, 440 415 L 430 472 C 345 450, 255 450, 170 472 Z" 
+          fill="url(#tBannerFrontGrad)" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+
+    <text x="300" y="452" fill="#FFFFFF" 
+          font-family="'Outfit', sans-serif" 
+          font-weight="900" font-size="44" 
+          letter-spacing="4" text-anchor="middle"
+          stroke="#10575E" stroke-width="2" paint-order="stroke fill">
+      FIBERA
+    </text>
+  </g>
+</svg>
